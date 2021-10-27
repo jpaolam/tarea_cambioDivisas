@@ -18,7 +18,7 @@ import javafx.scene.input.KeyEvent;
 /**
  * FXML Controller class
  *
- * @author obetancourth
+ * @author Jessie Gaboriell
  */
 public class TransaccionController implements Initializable {
 
