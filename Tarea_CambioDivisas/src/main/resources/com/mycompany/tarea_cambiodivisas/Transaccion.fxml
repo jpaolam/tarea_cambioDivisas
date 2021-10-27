@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="com.mycompany.tarea_cambiodivisas.TransaccionController">
+   <children>
+      <Label layoutX="149.0" layoutY="40.0" prefHeight="48.0" prefWidth="301.0" text="Transaccion de Monedas">
+         <font>
+            <Font name="Bodoni MT Black" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="118.0" text="Monto">
+         <font>
+            <Font name="Bodoni Bk BT Book" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="195.0" layoutY="207.0" text="Resultado">
+         <font>
+            <Font name="Bodoni Bk BT Book" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="montoOrigen" layoutX="195.0" layoutY="141.0" onKeyTyped="#montoOrigen_change" prefHeight="26.0" prefWidth="194.0" />
+      <TextField fx:id="montoResultado" layoutX="195.0" layoutY="230.0" onKeyTyped="#montoResultado_Change" prefHeight="26.0" prefWidth="194.0" />
+      <ComboBox fx:id="cbOrigen" layoutX="195.0" layoutY="167.0" onAction="#cmbMonto_Change" prefHeight="26.0" prefWidth="193.0" />
+      <ComboBox fx:id="cmbResultado" layoutX="195.0" layoutY="256.0" onAction="#cmbResultado_Change" prefHeight="26.0" prefWidth="194.0" />
+   </children>
+</AnchorPane>
